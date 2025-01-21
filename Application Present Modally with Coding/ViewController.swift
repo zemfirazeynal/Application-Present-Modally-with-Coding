@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func goTo2(_ sender: Any) {
+        let storyboard = UIStoryboard(name:"Main" , bundle: nil )
+        let gotoViewController = storyboard.instantiateViewController(withIdentifier: "page2") as! ViewController2
+        
+        self.present(gotoViewController, animated: true, completion: nil)
+    }
+    
 }
 
